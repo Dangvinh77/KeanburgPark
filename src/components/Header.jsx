@@ -37,11 +37,6 @@ const Header = () => {
     }
   }, []);
 
-  // Reset visit count to 0
-  const handleReset = useCallback(() => {
-    localStorage.setItem("page_view", 0); // Đặt lại giá trị trong localStorage thành 0
-    setVisitCount(0); // Đặt lại visitCount thành 0
-  }, []);
   // Move scrollToTop outside useEffect
   const scrollToTop = useCallback(() => {
     const scrollDuration = 1000; // Thời gian scroll (ms)
@@ -231,22 +226,6 @@ const Header = () => {
               <i class="bx bxs-user-account"></i>Visits
             </div>
             <div className="website-counter">{visitCount}</div>
-            {/* <button
-              //   Remember block code after remove Reset button
-              style={{
-                backgroundColor: "#131f2a", // background -> backgroundColor
-                color: "white", // Màu chữ
-                padding: "3px 10px", // Khoảng cách bên trong nút
-                margin: "10px 0px 10px 5px",
-                border: "none", // Loại bỏ viền
-                borderRadius: "5px", // Bo góc
-                cursor: "pointer", // Hiển thị con trỏ khi di chuột qua
-              }}
-              id="reset"
-              onClick={handleReset}
-            >
-              Reset
-            </button> */}
           </div>
         </div>
         <div className={`Navbar ${isNavbarFixed ? "fixed" : ""}`}>
@@ -320,7 +299,7 @@ const Header = () => {
             </div>
             <div className="logo-navbar">
               <Link to="/" className="logo">
-                <img src={logo} alt="Keanburg Park" />
+                <img src={logo} alt="Keansburg Park" />
               </Link>
             </div>
             <div className="side-navbar">

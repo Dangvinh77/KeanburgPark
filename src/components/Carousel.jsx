@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useCallback } from "react";
 import "../styles/components/CustomCarousel.scss";
 
 const CustomCarousel = ({ images, interval = 3000, linkTo }) => {
@@ -6,12 +6,12 @@ const CustomCarousel = ({ images, interval = 3000, linkTo }) => {
   const [isTransitioning, setIsTransitioning] = useState(false);
   const slideRef = useRef(null);
 
-  const nextSlide = () => {
+  const nextSlide = useCallback(() => {
     if (isTransitioning) return;
     setIsTransitioning(true);
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
     setTimeout(() => setIsTransitioning(false), 500);
-  };
+  }, [images.length, isTransitioning]);
 
   const prevSlide = () => {
     if (isTransitioning) return;
@@ -23,11 +23,9 @@ const CustomCarousel = ({ images, interval = 3000, linkTo }) => {
   };
 
   useEffect(() => {
-    const intervalId = setInterval(() => {
-      nextSlide();
-    }, interval);
+    const intervalId = setInterval(nextSlide, interval);
     return () => clearInterval(intervalId);
-  }, [currentIndex, interval, nextSlide]);
+  }, [interval, nextSlide]);
 
   return (
     <div className="custom-carousel">

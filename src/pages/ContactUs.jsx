@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import "../styles/pages/ContactUs.scss";
 
 // Import placeholder images
@@ -144,7 +143,11 @@ const ContactUs = () => {
           </div>
           {/* Image associated with Contact Details */}
           <div className="ad-section">
-            <img src={adPlaceholder1} alt="Park Image 1" className="ad-image" />
+            <img
+              src={adPlaceholder1}
+              alt="Keansburg park entrance"
+              className="ad-image"
+            />
           </div>
         </div>
 
@@ -152,7 +155,11 @@ const ContactUs = () => {
         <div className="contact-section-group">
           {/* Image associated with Form */}
           <div className="ad-section">
-            <img src={adPlaceholder2} alt="Park Image 2" className="ad-image" />
+            <img
+              src={adPlaceholder2}
+              alt="Keansburg park attractions"
+              className="ad-image"
+            />
           </div>
           <div className="contact-form-section">
             <div className="redBlock">
@@ -235,7 +242,11 @@ const ContactUs = () => {
 
           {/* Image associated with Map */}
           <div className="ad-section">
-            <img src={adPlaceholder3} alt="Park Image 3" className="ad-image" />
+            <img
+              src={adPlaceholder3}
+              alt="Keansburg park grounds"
+              className="ad-image"
+            />
             {/* Slogan Container */}
             <div className="slogan-container">
               <p className="slogan-text">Your Adventure Awaits!</p>

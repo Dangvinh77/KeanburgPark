@@ -1,7 +1,6 @@
 import "../styles/components/Footer.scss";
 import logo from "../assets/img/logo.svg";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 const Footer = () => {
   const [email, setEmail] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -39,7 +38,7 @@ const Footer = () => {
         <div className="top-Footer">
           <div className="logo-Footer">
             <a href="/">
-              <img src={logo} alt="Keanburg Park" />
+              <img src={logo} alt="Keansburg Park" />
             </a>
           </div>
           <div className="email-form">

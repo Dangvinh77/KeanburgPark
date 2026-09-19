@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom"; // If you use routing
 import "../../styles/pages/Tickets/Tickets.scss";
 import SuccessMessage from "../../pages/Tickets/SuccessMessage"; // Import
 
@@ -9,6 +8,15 @@ import weeklyTicketImage from "../../assets/img/tickets/weekly-ticket.png";
 import familyTicketImage from "../../assets/img/tickets/family-ticket.png";
 import discountImage1 from "../../assets/img/tickets/discount-1.png";
 import discountImage2 from "../../assets/img/tickets/discount-2.png";
+
+const PRICES = {
+  daily: { adult: 25, child: 15, base: 25 },
+  weekly: { adult: 100, child: 60, base: 100 },
+  family: {
+    small: { adult: 20, child: 12, base: 40 },
+    large: { adult: 18, child: 10, base: 54 },
+  },
+};
 
 const Tickets = () => {
   useEffect(() => {
@@ -34,16 +42,6 @@ const Tickets = () => {
   const [cardError, setCardError] = useState("");
   const [isPaymentSuccessful, setIsPaymentSuccessful] = useState(false); // Add this
 
-  // Prices
-  const prices = {
-    daily: { adult: 25, child: 15, base: 25 },
-    weekly: { adult: 100, child: 60, base: 100 },
-    family: {
-      small: { adult: 20, child: 12, base: 40 },
-      large: { adult: 18, child: 10, base: 54 },
-    },
-  };
-
   // Ticket image mapping and prices
   const ticketOptions = [
     {
@@ -51,21 +49,21 @@ const Tickets = () => {
       image: dailyTicketImage,
       alt: "Daily Ticket",
       label: "Daily Ticket",
-      price: prices.daily.base,
+      price: PRICES.daily.base,
     },
     {
       type: "weekly",
       image: weeklyTicketImage,
       alt: "Weekly Ticket",
       label: "Weekly Ticket",
-      price: prices.weekly.base,
+      price: PRICES.weekly.base,
     },
     {
       type: "family",
       image: familyTicketImage,
       alt: "Family Ticket",
       label: "Family Ticket",
-      price: prices.family[familySize].base,
+      price: PRICES.family[familySize].base,
     },
   ];
 
@@ -91,27 +89,27 @@ const Tickets = () => {
     let basePrice = 0;
 
     if (ticketType === "daily") {
-      basePrice = prices.daily.adult * quantity;
+      basePrice = PRICES.daily.adult * quantity;
     } else if (ticketType === "weekly") {
-      basePrice = prices.weekly.adult * quantity;
+      basePrice = PRICES.weekly.adult * quantity;
     } else if (ticketType === "family") {
       if (familySize === "small") {
         const numAdults = Math.min(quantity, 2);
         const numChildren = Math.max(0, quantity - 2);
         basePrice =
-          numAdults * prices.family.small.adult +
-          numChildren * prices.family.small.child;
+          numAdults * PRICES.family.small.adult +
+          numChildren * PRICES.family.small.child;
       } else {
         const numAdults = Math.min(quantity, 3);
         const numChildren = Math.max(0, quantity - 3);
         basePrice =
-          numAdults * prices.family.large.adult +
-          numChildren * prices.family.large.child;
+          numAdults * PRICES.family.large.adult +
+          numChildren * PRICES.family.large.child;
       }
     }
 
     setTotalPrice(basePrice);
-  }, [ticketType, familySize, quantity, prices]);
+  }, [ticketType, familySize, quantity]);
 
   const handleTicketTypeChange = (type) => {
     setTicketType(type);
@@ -257,7 +255,7 @@ const Tickets = () => {
                 <div className="ticket-image-container">
                   <img src={option.image} alt={option.alt} />
                   <span className="ticket-price">
-                    ${prices[option.type].base}
+                    ${PRICES[option.type].base}
                   </span>
                 </div>
                 {option.label}
