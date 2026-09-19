@@ -145,7 +145,7 @@ const ContactUs = () => {
           <div className="ad-section">
             <img
               src={adPlaceholder1}
-              alt="Keansburg park entrance"
+              alt="Olde Heidelberg staff at Keansburg Amusement Park"
               className="ad-image"
             />
           </div>
