@@ -43,7 +43,7 @@ The development server opens at [http://localhost:3000](http://localhost:3000).
 ## Available Scripts
 
 - `npm start` — run the development server
-- `npm test` — run the test suite in watch mode
+- `npm test -- --watchAll=false --passWithNoTests` — runs the current test command once; the project does not yet include automated test files
 - `npm run build` — create an optimized production build
 - `npm run eject` — expose Create React App configuration (irreversible)
 

@@ -30,10 +30,8 @@ const AboutUs = () => {
             <p>
               Originally a fishing village, Keansburg evolved into a resort
               destination for visitors from Northern New Jersey and New York.
-              Keansburg Amusement Park became a significant attraction even
-              before the borough's official incorporation. The park, alongside
-              the Steamboat Company founded in 1910, played a crucial role in
-              developing Keansburg as a recreation-focused resort.
+              Its growing appeal as a seaside destination created the setting
+              for the amusement park that would be founded in 1904.
             </p>
           </div>
         </div>
