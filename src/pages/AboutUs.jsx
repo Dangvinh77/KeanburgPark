@@ -33,7 +33,7 @@ const AboutUs = () => {
             lineHeight: "1.6",
           }}
         >
-          Welcome to Keanburg Amusement Park, your premier destination for
+          Welcome to Keansburg Amusement Park, your premier destination for
           thrilling adventures and unforgettable memories! Our homepage is your
           gateway to a world of vibrant colors, exhilarating rides, and
           captivating attractions, meticulously designed to spark joy and create
@@ -41,11 +41,11 @@ const AboutUs = () => {
           magic that awaits within our park’s gates, from heart-stopping roller
           coasters to family-friendly escapades. We believe in the power of
           shared experiences and have crafted every detail to ensure that each
-          visit to Keanburg is brimming with excitement and wonder. Discover our
+          visit to Keansburg is brimming with excitement and wonder. Discover our
           digital landscape to uncover a wealth of information, including rides,
           shows, dining, and park amenities, all designed to make your planning
           seamless and enjoyable. We invite you to dive into our online world
-          and experience the very essence of what makes Keanburg so special: the
+          and experience the very essence of what makes Keansburg so special: the
           thrill, the excitement, and the genuine happiness.
         </p>
         <br />
@@ -65,7 +65,7 @@ const AboutUs = () => {
           show schedules, and pricing are subject to change without prior
           notice. We highly recommend that you verify all details pertinent to
           your visit directly on our site or by contacting our customer service
-          team prior to your arrival. Furthermore, Keanburg Amusement Park is
+          team prior to your arrival. Furthermore, Keansburg Amusement Park is
           not responsible for personal belongings or any unforeseen accidents
           that may occur during your visit. It is imperative that all guests
           adhere to safety regulations and guidelines posted throughout the park
@@ -85,7 +85,7 @@ const AboutUs = () => {
             lineHeight: "1.6",
           }}
         >
-          At Keanburg Amusement Park, we are committed to protecting your
+          At Keansburg Amusement Park, we are committed to protecting your
           privacy and ensuring the security of your personal information. When
           you visit our website or purchase tickets, we may collect certain
           data, such as your name, email address, and payment details, which are
@@ -101,7 +101,7 @@ const AboutUs = () => {
           all our guests, both online and within the park, and encourage you to
           contact us with any questions or concerns regarding your privacy. Your
           peace of mind is paramount to us, and we strive to maintain a
-          transparent and secure relationship with every visitor to Keanburg.
+          transparent and secure relationship with every visitor to Keansburg.
         </p>
         <br />
         <h1 ref={bookingTermsRef} id="booking-terms">
@@ -115,17 +115,17 @@ const AboutUs = () => {
             lineHeight: "1.6",
           }}
         >
-          All ticket purchases for Keanburg Amusement Park are considered final
+          All ticket purchases for Keansburg Amusement Park are considered final
           and non-refundable. We encourage you to carefully review your chosen
           date and ticket type before completing your transaction. Any special
           promotions, discounts, or group rates are valid only during the
           stipulated promotional periods and while supplies last, and may be
           subject to specific terms and conditions. Furthermore, lost or damaged
-          tickets cannot be replaced. Keanburg Amusement Park reserves the right
+          tickets cannot be replaced. Keansburg Amusement Park reserves the right
           to refuse admission or eject any individual who violates park policies
           or behaves in a manner deemed disruptive or harmful to others. Your
           booking constitutes acceptance of these terms and conditions, and we
-          eagerly anticipate welcoming you to Keanburg for a day filled with
+          eagerly anticipate welcoming you to Keansburg for a day filled with
           unforgettable fun.
         </p>
       </div>

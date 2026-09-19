@@ -42,6 +42,30 @@
       width: 40%; // Ensure the text content takes up the remaining 40%
     }
   }
+
+  .project-info {
+    margin: 30px 0;
+    padding: 28px 32px;
+    border-left: 6px solid #810000;
+    border-radius: 14px;
+    background-color: #f9f9f9;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+
+    h2 {
+      margin-bottom: 14px;
+      color: #810000;
+    }
+
+    p {
+      margin-bottom: 10px;
+      line-height: 1.7;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
   .more-info-container {
     display: flex;
     justify-content: space-around;
@@ -72,6 +96,13 @@
       &:hover {
         transform: scale(1.1);
       }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .project-info {
+      padding: 22px 20px;
+      border-left-width: 4px;
     }
   }
 }

@@ -23,17 +23,16 @@ const AboutUs = () => {
             <img src={FishVillage} alt="Fishing village" />
           </div>
           <div className="text-content">
-            <h2>Before 1901</h2>
+            <h2>Before 1904</h2>
             <br />
             <h3>From Fishing Village to Premier Resort Destination</h3>
             <br />
             <p>
               Originally a fishing village, Keansburg evolved into a resort
               destination for visitors from Northern New Jersey and New York.
-              The Keansburg Amusement Park, which marked its 120th anniversary
-              in 2024, has been a significant attraction even before the
-              borough's official incorporation. The park, alongside the
-              Steamboat Company founded in 1910, played a crucial role in
+              Keansburg Amusement Park became a significant attraction even
+              before the borough's official incorporation. The park, alongside
+              the Steamboat Company founded in 1910, played a crucial role in
               developing Keansburg as a recreation-focused resort.
             </p>
           </div>
@@ -43,7 +42,7 @@ const AboutUs = () => {
             <img src={Resort} alt="Summer resort" />
           </div>
           <div className="text-content">
-            <h2>1901</h2>
+            <h2>1904</h2>
             <br />
             <h3>Founding of Keansburg Park and Early Attractions</h3>
             <br />
@@ -76,7 +75,7 @@ const AboutUs = () => {
         </div>
         <div className="content-container">
           <div className="left-side">
-            <img src={NextGen} alt="Spook House" />
+            <img src={NextGen} alt="Keansburg Amusement Park attractions" />
           </div>
           <div className="text-content">
             <h2>1995</h2>
@@ -91,14 +90,27 @@ const AboutUs = () => {
             </p>
             <br />
             <p>
-              Today, Keansburg Amusement Park continues to draw thousands of
-              visitors from April to October, offering a mix of classic and
+              Keansburg Amusement Park is known for its mix of classic and
               modern attractions, including rides, games, and water activities.
             </p>
           </div>
         </div>
+        <section className="project-info" aria-labelledby="project-info-title">
+          <h2 id="project-info-title">About This Project</h2>
+          <p>
+            Phạm Đăng Vinh created this personal project to learn and practice
+            React while presenting information about Keansburg Amusement Park.
+            It is an independent educational project and is not affiliated with,
+            endorsed by, or sponsored by the park.
+          </p>
+          <p>
+            The contact, ticket-booking, and payment experiences are
+            demonstrations only. They do not send requests to the park, reserve
+            admission, process payments, or complete real transactions.
+          </p>
+        </section>
         <div className="redBlock">
-          <h2>History</h2>
+          <h2>More Information</h2>
         </div>
         <div className="more-info-container">
           <a href="/aboutus/disclaimer" className="info-card">
