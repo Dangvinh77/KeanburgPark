@@ -13,7 +13,7 @@ A personal React project by **Phạm Đăng Vinh** that presents the history, at
 - Responsive pages for park information, attractions, dining, tickets, gallery content, and visitor guidance
 - Client-side navigation for a smooth single-page application experience
 - Historical and informational content about Keansburg Amusement Park
-- Reusable React components with Sass and Bootstrap-based styling
+- Reusable React components with Sass-based styling
 - Demo contact, ticket-booking, and payment interfaces
 
 Contact submissions, ticket booking, and payment features are provided for demonstration purposes only. They do not contact the park, reserve admission, charge a payment method, or complete any real transaction.
@@ -24,7 +24,6 @@ Contact submissions, ticket booking, and payment features are provided for demon
 - React Router DOM 7
 - Create React App with react-scripts 5
 - Sass
-- Bootstrap 5 and React Bootstrap
 - React Icons and Boxicons
 - npm
 - Vercel
@@ -38,7 +37,7 @@ npm ci
 npm start
 ```
 
-The development server opens at [http://localhost:3000](http://localhost:3000).
+The development server opens at [http://localhost:25151](http://localhost:25151).
 
 ## Available Scripts
 
